@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import LogoWrapper from "./Logo";
-import Menu from "./Menu";
+import MenuWrapper from "./Menu";
 
 const HeaderWrapper = () => {
   return (
     <Header>
       <LogoWrapper />
-      <Menu />
+      <MenuWrapper />
     </Header>
   );
 };
