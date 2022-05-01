@@ -9,8 +9,10 @@ const HeroSecction = () => {
         Lörem ipsum laska nöbäpregt. Byrat titrebelt. Hemin samlarsyndrom och
         antisk reng. Makroning gåsamma plant medan egogt, som bengen.
       </p>
-      <Button text="buscar vagas" />
-      <Button text="criar conta" transparent={true} />
+      <div className="button-group">
+        <Button text="buscar vagas" />
+        <Button text="criar conta" transparent={true} />
+      </div>
     </Container>
   );
 };
@@ -35,6 +37,12 @@ const Container = styled.main`
     color: #e9e9e9;
     width: 390px;
     margin-top: 12px;
+  }
+
+  .button-group {
+    margin-top: 44px;
+    display: flex;
+    gap: 22px;
   }
 `;
 
