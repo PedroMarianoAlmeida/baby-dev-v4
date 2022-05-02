@@ -5,7 +5,7 @@ const Avatar = ({ size = "18px", src }) => {
 };
 
 const Image = styled.img`
-  height: ${(props) => props.size};
+  width: ${(props) => props.size};
   border-radius: 50%;
 `;
 

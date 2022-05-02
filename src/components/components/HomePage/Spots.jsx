@@ -8,7 +8,7 @@ const Spots = () => {
         <div className="person1">
           <div style={{ position: "relative" }}>
             <div style={{ zIndex: 2 }}>
-              <Avatar size="150px" src={"images/person1.png"} />
+              <Avatar size="15vw" src={"images/person1.png"} />
             </div>
             <div className="person-border-1">
               <Circunference color={"#d7225e"} />
@@ -17,7 +17,7 @@ const Spots = () => {
         </div>
         <div className="person2">
           <div style={{ position: "relative" }}>
-            <Avatar size="150px" src={"images/person2.png"} />
+            <Avatar size="15vw" src={"images/person2.png"} />
 
             <div className="person-border-2">
               <Circunference color={"#FFEC43"} />
@@ -26,7 +26,7 @@ const Spots = () => {
         </div>
         <div className="person3">
           <div style={{ position: "relative" }}>
-            <Avatar size="150px" src={"images/person3.png"} />
+            <Avatar size="15vw" src={"images/person3.png"} />
             <div className="person-border-3">
               <Circunference color={"#FFEC43"} />
             </div>
@@ -60,13 +60,13 @@ const Container = styled.div`
     position: absolute;
     left: 0;
     top: 135px;
-    z-index: 2;
+    z-index: 2;    
   }
 
   .person-border-1 {
     position: absolute;
-    top: 7px;
-    left: 7px;
+    top: 1.5vw;
+    left: 1.5vw;
     z-index: 1;
   }
 
@@ -84,15 +84,15 @@ const Container = styled.div`
 
   .person-border-2 {
     position: absolute;
-    bottom: 19px;
-    left: 23px;
+    bottom: 2.5vw;
+    left: 2.3vw;
     z-index: 1;
   }
 
   .person-border-3 {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 2vw;
+    left: 1.8vw;
     z-index: 1;
   }
 
@@ -118,22 +118,22 @@ const Container = styled.div`
   }
 `;
 const Circunference = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   border: 1px solid ${(props) => props.color};
   box-sizing: border-box;
   border-radius: 300px;
 `;
 const BigCircle = styled.div`
-  width: 25px;
-  height: 25px;
+  width: 1.8vw;
+  height: 1.8vw;
   background: #d7225e;
   border-radius: 75px;
 `;
 
 const SmallCircle = styled.div`
-  width: 14px;
-  height: 14px;
+  width: .9vw;
+  height: .9vw;
   background: #ffec43;
   border-radius: 75px;
 `;
