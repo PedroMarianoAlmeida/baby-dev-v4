@@ -47,9 +47,11 @@ const Spots = () => {
 };
 
 const Container = styled.div`
-  width: 600px;
+  flex-grow: 1;
+  height: 350px;
+  margin-left: -150px;
   //background-color: red;
-
+ 
   .details-wrapper {
     position: relative;
     height: 100%;
@@ -57,7 +59,7 @@ const Container = styled.div`
   .person1 {
     position: absolute;
     left: 0;
-    top: 86px;
+    top: 135px;
     z-index: 2;
   }
 
@@ -70,7 +72,7 @@ const Container = styled.div`
 
   .person2 {
     position: absolute;
-    left: 145px;
+    left: 40%;
     top: 19px;
   }
 
