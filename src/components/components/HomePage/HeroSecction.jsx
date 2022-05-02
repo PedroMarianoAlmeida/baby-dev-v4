@@ -5,16 +5,18 @@ import Spots from "./Spots";
 const HeroSecction = () => {
   return (
     <Container>
-      <h1>Conquiste sua primeira vaga Tech</h1>
-      <p>Todas nossas vagas...</p>
-      <ul>
-        <li>Não exigem experiência prévia 👶</li>
-        <li>São na área de ternologia 💻</li>
-        <li>Exigem no máximo cinco tecnologias ⬇️ 5️⃣</li>
-      </ul>
-      <div className="button-group">
-        <Button text="buscar vagas" />
-        <Button text="criar conta" transparent={true} />
+      <div>
+        <h1>Conquiste sua primeira vaga Tech</h1>
+        <p>Todas nossas vagas...</p>
+        <ul>
+          <li>Não exigem experiência prévia 👶</li>
+          <li>São na área de ternologia 💻</li>
+          <li>Exigem no máximo cinco tecnologias ⬇️ 5️⃣</li>
+        </ul>
+        <div className="button-group">
+          <Button text="buscar vagas" />
+          <Button text="criar conta" transparent={true} />
+        </div>
       </div>
       <Spots />
     </Container>
@@ -22,6 +24,7 @@ const HeroSecction = () => {
 };
 
 const Container = styled.main`
+  display: flex;
   padding: 66px;
   h1 {
     font-style: normal;
